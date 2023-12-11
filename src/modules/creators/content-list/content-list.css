@@ -1,0 +1,33 @@
+.main-video-div{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.card {
+    width: 300px !important;
+
+    flex-wrap: wrap;
+    
+}
+  
+  .card iframe {
+    border: 0;
+  }
+  
+  .card-body {
+    padding: 15px;
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+  }
+  
+
+  .video-player-section{
+    width: 300px !important;
+  }

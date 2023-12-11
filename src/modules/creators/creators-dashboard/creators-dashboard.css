@@ -1,0 +1,25 @@
+.main-div{
+    width: 100%;
+    display: flex;
+    height: auto;
+
+}
+
+.sidebar{
+    width: 20%;
+    height: 100vh;
+    background-color: #111112;
+    color: white
+}
+.side-body{
+    width: 80%;
+}
+
+.sidebar-navbar{
+    margin: 20px;
+}
+
+h4{
+    margin-top: 15px;
+    cursor: pointer;
+}

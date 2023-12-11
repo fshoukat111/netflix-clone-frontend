@@ -1,0 +1,30 @@
+.main-detail-section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card-detail{
+    width: 26% !important;
+}
+
+
+
+.feedback-section{
+    /* width:100%; */
+    margin: 16px;
+}
+.video-player-detail{
+    height: 169px !important;
+    /* width: 350px !important */
+  }
+  #vnetwork-player{
+    height: 169px !important;
+    width:400px !important;
+  }
+
+li{
+    list-style-type: none;
+
+}

@@ -1,0 +1,57 @@
+.center-div{
+    text-align: center;
+}
+
+.form-div{
+    width: 100%;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.form-data{
+    display: contents;
+    /* flex-direction: column; */
+}
+
+.input-class{
+    width:300px;
+    height:30px;
+    margin-top: 10px;
+}
+
+
+a{
+    color: #03bafc;
+    cursor: pointer;
+}
+
+.main-div{
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    height: auto;
+
+}
+
+.sidebar{
+    width: 20%;
+    height: auto;
+    background-color: #111112;
+    color: white
+}
+.side-body{
+    width: 80%;
+    /* height: 100%; */
+}
+
+.sidebar-navbar{
+    margin: 20px;
+}
+
+h4{
+    margin-top: 15px;
+    cursor: pointer;
+}

@@ -1,0 +1,48 @@
+.main-video-div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.card {
+  width: 350px !important;
+  margin: 15px;
+  flex-wrap: wrap;
+  
+}
+
+.card iframe {
+  border: 0;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+
+.video-player-section{
+  width: 300px !important;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.videos-player{
+  height: 169px !important;
+  width: 350px !important
+}
+
+.search-video{
+  margin:15px 15px 0 15px;
+  width: 100%;
+}
