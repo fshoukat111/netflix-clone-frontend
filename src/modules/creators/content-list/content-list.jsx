@@ -11,7 +11,8 @@ const ContentListComponent = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('http://localhost:5000/videos');
+                const response = await fetch('https://backend-netflix.azurewebsites.net/videos');
+                // const response = await fetch('http://localhost:5000/videos');
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }

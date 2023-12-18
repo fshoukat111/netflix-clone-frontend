@@ -27,7 +27,8 @@ const EditContentComponent = () => {
         // Fetch content data based on the ID when the component mounts
         const fetchContentData = async () => {
             try {
-                const response = await fetch(`http://localhost:5000/video/${id}`);
+                const response = await fetch(`https://backend-netflix.azurewebsites.net/video/${id}`);
+                // const response = await fetch(`http://localhost:5000/video/${id}`);
                 const contentData = await response.json();
                 setFormData({
                     contentTitle: contentData.video.contentTitle,
@@ -65,7 +66,8 @@ const EditContentComponent = () => {
 
             // Assuming videoUrl is not editable, so it won't be sent in the update request
 
-            const response = await fetch(`http://localhost:5000/update-video/${id}`, {
+            const response = await fetch(`https://backend-netflix.azurewebsites.net/update-video/${id}`, {
+            // const response = await fetch(`http://localhost:5000/update-video/${id}`, {
                 method: 'PUT',
                 body: formDataToUpdate,
                 headers: {

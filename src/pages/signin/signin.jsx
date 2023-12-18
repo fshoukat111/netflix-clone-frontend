@@ -23,7 +23,8 @@ const SigninComponent = () => {
         e.preventDefault();
 
         try {
-            const response = await fetch('http://localhost:5000/signin', {
+            const response = await fetch('https://backend-netflix.azurewebsites.net/signin', {
+            // const response = await fetch('http://localhost:5000/signin', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

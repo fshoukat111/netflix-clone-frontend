@@ -51,7 +51,8 @@ const CreateContentComponent = () => {
             formDataToSend.append('videoUrl', formData.videoUrl);
             formDataToSend.append('pg', formData.pg);
 
-            const response = await fetch('http://localhost:5000/create-videos', {
+            const response = await fetch('https://backend-netflix.azurewebsites.net/create-videos', {
+            // const response = await fetch('http://localhost:5000/create-videos', {
                 method: 'POST',
                 body: formDataToSend,
                 headers: {

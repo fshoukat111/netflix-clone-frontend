@@ -20,8 +20,11 @@ const ViewerDashboard = () => {
                 const currentUserAge = localStorage.getItem('currentUserAge');
                 setUserAge(currentUserAge);
                 const apiUrl = searchQuery
-                    ? `http://localhost:5000/videos?search=${searchQuery}`
-                    : 'http://localhost:5000/videos';
+                    ? `https://backend-netflix.azurewebsites.net/videos?search=${searchQuery}`
+                    : 'https://backend-netflix.azurewebsites.net/videos';
+                // const apiUrl = searchQuery
+                //     ? `http://localhost:5000/videos?search=${searchQuery}`
+                //     : 'http://localhost:5000/videos';
 
                 const response = await fetch(apiUrl);
 

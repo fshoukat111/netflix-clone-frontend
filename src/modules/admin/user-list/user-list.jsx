@@ -11,7 +11,8 @@ const UserListComponent = () => {
 
   const fetchData = async () => {
     try {
-      const response = await fetch('http://localhost:5000/admin/users');
+      const response = await fetch('https://backend-netflix.azurewebsites.net/admin/users');
+      // const response = await fetch('http://localhost:5000/admin/users');
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
@@ -36,7 +37,8 @@ const UserListComponent = () => {
   }
 
   const handleDeleteUser = async (user) => {
-    const deleteUrl = `http://localhost:5000/admin/delete/${user.id}`;
+    // const deleteUrl = `http://localhost:5000/admin/delete/${user.id}`;
+    const deleteUrl = `https://backend-netflix.azurewebsites.net/delete/${user.id}`;
 
     try {
       // Defining the options for the DELETE request

@@ -22,7 +22,8 @@ const ViewerVideoDetail = () => {
     useEffect(() => {
         const fetchContentData = async () => {
             try {
-                const response = await fetch(`http://localhost:5000/video/${id}`);
+                const response = await fetch(`https://backend-netflix.azurewebsites.net/video/${id}`);
+                // const response = await fetch(`http://localhost:5000/video/${id}`);
                 const contentData = await response.json();
                 setDataDetail({
                     contentTitle: contentData.video.contentTitle,
@@ -44,7 +45,7 @@ const ViewerVideoDetail = () => {
     const getFeedBack = async () => {
         const videoId = id;
         try {
-            const response = await fetch(`http://localhost:5000/video/feedback/${videoId}`);
+            const response = await fetch(`https://backend-netflix.azurewebsites.net/video/feedback/${videoId}`);
 
             if (!response.ok) {
                 throw new Error(`Server returned ${response.status} ${response.statusText}`);
@@ -68,7 +69,8 @@ const ViewerVideoDetail = () => {
     const handleAddFeedback = async () => {
             const videoId = id;
         try {
-            const response = await fetch(`http://localhost:5000/video/create/${videoId}/feedback`, {
+            const response = await fetch(`https://backend-netflix.azurewebsites.net/video/create/${videoId}/feedback`, {
+            // const response = await fetch(`http://localhost:5000/video/create/${videoId}/feedback`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

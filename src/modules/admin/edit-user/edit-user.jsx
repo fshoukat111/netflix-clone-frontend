@@ -19,7 +19,8 @@ const EditUserComponent = () => {
         // Fetch content data based on the ID when the component mounts
         const fetchUserData = async () => {
             try {
-                const response = await fetch(`http://localhost:5000/user/${id}`);
+                const response = await fetch(`https://backend-netflix.azurewebsites.net/user/${id}`);
+                // const response = await fetch(`http://localhost:5000/user/${id}`);
                 const userData = await response.json();
                 setFormData({
                     role: userData.user.role,
